@@ -1,0 +1,64 @@
+{
+  "version": "0.1.0",
+  "name": "decentralized_voting",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "votingAccount",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "vote",
+      "accounts": [
+        {
+          "name": "votingAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "choice",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "VotingAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "cats",
+            "type": "u64"
+          },
+          {
+            "name": "dogs",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "address": "3eV3bUBgyJ59nkYW8wu1T4pWZyrRBsPUH4Yc78woV6YN"
+  }
+}

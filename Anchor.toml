@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+decentralized_voting = "3eV3bUBgyJ59nkYW8wu1T4pWZyrRBsPUH4Yc78woV6YN"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"  # or "testnet" if that's what you want to use
+wallet = "/home/deol/.config/solana/id.json"
+
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
