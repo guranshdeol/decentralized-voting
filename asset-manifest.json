@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/decentralized-voting/static/css/main.01b9f34f.css",
+    "main.js": "/decentralized-voting/static/js/main.f21cdbaa.js",
+    "index.html": "/decentralized-voting/index.html",
+    "main.01b9f34f.css.map": "/decentralized-voting/static/css/main.01b9f34f.css.map",
+    "main.f21cdbaa.js.map": "/decentralized-voting/static/js/main.f21cdbaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01b9f34f.css",
+    "static/js/main.f21cdbaa.js"
+  ]
+}
